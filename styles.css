@@ -1,0 +1,132 @@
+/* Reset some basic styles */
+body, h1, h2, p, input, button, div, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* background-color: #f4f4f4; */
+    background-image: url("c06cdad546da4ef033150e74d1ccd6b2.gif");
+    /* background-image: url("image/c06cdad546da4ef033150e74d1ccd6b2.gif"); */
+    /* background: url("image/9825-221185540_large.mp4") no-repeat center center; */
+    /* background: url('image/3129957-uhd_3840_2160_25fps.mp4'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #333;
+}
+
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a8585;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+#current-weather, #forecast {
+    background-color: white;
+    background-color: rgb(219, 230, 212);
+    color: #121111;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(100px);  */
+    backdrop-filter: blur(100px);
+    background:  transparent; 
+    
+
+}
+#current-weather :hover, #forecast :hover {
+ color: #fa0339;
+ /* transition: color 0.3s ease; */
+ /* background-color: #f0f0f0; Light gray background on hover */
+    /* font-size: 1em;  */
+    /* text-decoration: underline; Underline text on hover */
+    /* transform: scale(1.05); Scale up the text slightly */
+    /* opacity: 0.8; Make the text slightly transparent */
+}
+
+#weather-info, #forecast-info {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.forecast-day {
+    flex: 1 1 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+
